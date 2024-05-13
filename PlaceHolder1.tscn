@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd5ev6o6dskah"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_elij6"]
+size = Vector2(193, 62)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4scqg"]
+font_size = 35
+
+[node name="PlaceHolder1" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_elij6")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -157.0
+offset_top = -75.5
+offset_right = 157.0
+offset_bottom = 75.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "World: 1"
+label_settings = SubResource("LabelSettings_4scqg")
+horizontal_alignment = 1
+vertical_alignment = 1

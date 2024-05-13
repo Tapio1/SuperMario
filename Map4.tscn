@@ -1,0 +1,117 @@
+[gd_scene load_steps=10 format=3 uid="uid://dvp23kbexiemx"]
+
+[ext_resource type="PackedScene" uid="uid://djp63mqstbkbg" path="res://Scenes/Wall.tscn" id="1_jycgj"]
+[ext_resource type="PackedScene" uid="uid://bawgfr0r3dbo5" path="res://Scenes/Ground.tscn" id="2_ue5mf"]
+[ext_resource type="PackedScene" uid="uid://vforgpixrypf" path="res://Scenes/Enemy.tscn" id="3_b1mfo"]
+[ext_resource type="PackedScene" uid="uid://c2dl41nadgue7" path="res://Scenes/GroundWithWall.tscn" id="4_ohnn1"]
+[ext_resource type="PackedScene" uid="uid://do4hxvw30gek8" path="res://Scenes/Block.tscn" id="5_oiiyv"]
+[ext_resource type="PackedScene" uid="uid://c62vvcxec7g8c" path="res://Scenes/BigCoin.tscn" id="6_h4qqp"]
+[ext_resource type="PackedScene" uid="uid://dkipgekiqi8xc" path="res://Scenes/Coin.tscn" id="7_t7txc"]
+[ext_resource type="PackedScene" uid="uid://c3qo6c430n5uf" path="res://Scenes/Goal.tscn" id="8_mwkej"]
+[ext_resource type="PackedScene" uid="uid://d6nkpt8j0f7i" path="res://Scenes/BottomGround.tscn" id="9_kyyaq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Wall" parent="." instance=ExtResource("1_jycgj")]
+
+[node name="Wall5" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(3195, -2)
+
+[node name="Wall6" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(4292, -2)
+
+[node name="Wall4" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(2172, -2)
+
+[node name="Wall3" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(1100, -2)
+
+[node name="Wall2" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(-1100, -2)
+
+[node name="Wall7" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(-1100, -562)
+
+[node name="Wall8" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(-1099, -1114)
+
+[node name="Wall9" parent="." instance=ExtResource("1_jycgj")]
+position = Vector2(5391, -275)
+
+[node name="Ground" parent="." instance=ExtResource("2_ue5mf")]
+position = Vector2(1267, -430)
+
+[node name="Ground3" parent="." instance=ExtResource("2_ue5mf")]
+position = Vector2(2782, -898)
+
+[node name="Ground2" parent="." instance=ExtResource("2_ue5mf")]
+position = Vector2(532, -644)
+
+[node name="Enemy" parent="." instance=ExtResource("3_b1mfo")]
+position = Vector2(1407, -621)
+
+[node name="Enemy5" parent="." instance=ExtResource("3_b1mfo")]
+position = Vector2(4152, -371)
+
+[node name="Enemy4" parent="." instance=ExtResource("3_b1mfo")]
+position = Vector2(2359, -355)
+
+[node name="Enemy3" parent="." instance=ExtResource("3_b1mfo")]
+position = Vector2(1817, -1139)
+
+[node name="Enemy6" parent="." instance=ExtResource("3_b1mfo")]
+position = Vector2(3539, -655)
+
+[node name="Enemy7" parent="." instance=ExtResource("3_b1mfo")]
+position = Vector2(5163, -654)
+
+[node name="Enemy2" parent="." instance=ExtResource("3_b1mfo")]
+position = Vector2(2157, -685)
+
+[node name="GroundWithWall" parent="." instance=ExtResource("4_ohnn1")]
+position = Vector2(2072, -562)
+
+[node name="GroundWithWall5" parent="." instance=ExtResource("4_ohnn1")]
+position = Vector2(-59, -427)
+
+[node name="GroundWithWall4" parent="." instance=ExtResource("4_ohnn1")]
+position = Vector2(4505, -427)
+
+[node name="GroundWithWall3" parent="." instance=ExtResource("4_ohnn1")]
+position = Vector2(3505, -508)
+
+[node name="GroundWithWall2" parent="." instance=ExtResource("4_ohnn1")]
+position = Vector2(1917, -1043)
+
+[node name="?-Block" parent="." instance=ExtResource("5_oiiyv")]
+position = Vector2(2283, -771)
+
+[node name="?-Block2" parent="." instance=ExtResource("5_oiiyv")]
+position = Vector2(654, -846)
+
+[node name="BigCoin" parent="." instance=ExtResource("6_h4qqp")]
+position = Vector2(1750, -1346)
+
+[node name="BigCoin3" parent="." instance=ExtResource("6_h4qqp")]
+position = Vector2(-465, -433)
+
+[node name="BigCoin4" parent="." instance=ExtResource("6_h4qqp")]
+position = Vector2(-467, -533)
+
+[node name="BigCoin5" parent="." instance=ExtResource("6_h4qqp")]
+position = Vector2(-463, -640)
+
+[node name="BigCoin2" parent="." instance=ExtResource("6_h4qqp")]
+position = Vector2(367, -826)
+
+[node name="Coin" parent="." instance=ExtResource("7_t7txc")]
+position = Vector2(491, -497)
+
+[node name="Coin2" parent="." instance=ExtResource("7_t7txc")]
+position = Vector2(-37, -597)
+
+[node name="Node2D" parent="." instance=ExtResource("8_mwkej")]
+position = Vector2(4896, -641)
+
+[node name="BottomGround" parent="." instance=ExtResource("9_kyyaq")]
+position = Vector2(-15, -1676)

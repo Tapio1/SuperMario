@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3qo6c430n5uf"]
+
+[ext_resource type="Texture2D" uid="uid://d2r30m3t12ixv" path="res://img/MarioPattern.webp" id="1_6djms"]
+[ext_resource type="Texture2D" uid="uid://b7871wflsccw5" path="res://img/coin.png" id="2_qm36x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vchrx"]
+size = Vector2(20, 188)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 0)
+scale = Vector2(0.0095703, 0.133984)
+texture = ExtResource("1_6djms")
+
+[node name="GoalArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GoalArea"]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_vchrx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(0, -86)
+scale = Vector2(0.604478, 0.578358)
+texture = ExtResource("2_qm36x")

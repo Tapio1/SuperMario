@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8mea30ba1byy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ifyu"]
+size = Vector2(71842, 656)
+
+[node name="OffLimits" type="Node2D"]
+
+[node name="OffLimitsArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OffLimitsArea"]
+shape = SubResource("RectangleShape2D_7ifyu")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://do4hxvw30gek8"]
+
+[ext_resource type="Script" path="res://Block.cs" id="1_j6ct0"]
+[ext_resource type="Texture2D" uid="uid://cx0gfosjljwgg" path="res://img/question mark.webp" id="1_xetj0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w8niy"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_721u4"]
+size = Vector2(58, 21)
+
+[node name="?-Block" type="Node2D"]
+script = ExtResource("1_j6ct0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.53674e-07, 0)
+scale = Vector2(0.0505859, 0.0503906)
+texture = ExtResource("1_xetj0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_w8niy")
+
+[node name="1upArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1upArea"]
+position = Vector2(0, 25.5)
+shape = SubResource("RectangleShape2D_721u4")
+
+[connection signal="area_entered" from="1upArea" to="." method="OnPlayerEntered"]

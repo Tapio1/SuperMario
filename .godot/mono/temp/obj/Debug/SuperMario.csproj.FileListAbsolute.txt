@@ -1,0 +1,17 @@
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.csproj.AssemblyReference.cache
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.AssemblyInfoInputs.cache
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.AssemblyInfo.cs
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.csproj.CoreCompileInputs.cache
+C:\Godot.projects\SuperMario\.godot\mono\temp\bin\Debug\SuperMario.deps.json
+C:\Godot.projects\SuperMario\.godot\mono\temp\bin\Debug\SuperMario.runtimeconfig.json
+C:\Godot.projects\SuperMario\.godot\mono\temp\bin\Debug\SuperMario.dll
+C:\Godot.projects\SuperMario\.godot\mono\temp\bin\Debug\SuperMario.pdb
+C:\Godot.projects\SuperMario\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Godot.projects\SuperMario\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.csproj.CopyComplete
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.dll
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\refint\SuperMario.dll
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.pdb
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\SuperMario.genruntimeconfig.cache
+C:\Godot.projects\SuperMario\.godot\mono\temp\obj\Debug\ref\SuperMario.dll

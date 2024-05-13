@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj82b5y786byv"]
+
+[ext_resource type="PackedScene" uid="uid://djp63mqstbkbg" path="res://Scenes/Wall.tscn" id="1_5osl1"]
+[ext_resource type="PackedScene" uid="uid://bawgfr0r3dbo5" path="res://Scenes/Ground.tscn" id="2_fmvls"]
+[ext_resource type="PackedScene" uid="uid://vforgpixrypf" path="res://Scenes/Enemy.tscn" id="3_yf8my"]
+
+[node name="Map3" type="Node2D"]
+
+[node name="Wall" parent="." instance=ExtResource("1_5osl1")]
+position = Vector2(548, 570)
+
+[node name="Ground" parent="." instance=ExtResource("2_fmvls")]
+position = Vector2(1378, 328)
+
+[node name="Enemy" parent="." instance=ExtResource("3_yf8my")]
+position = Vector2(1087, 90)

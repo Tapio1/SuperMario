@@ -1,0 +1,455 @@
+[gd_scene load_steps=13 format=3 uid="uid://cd4orjkmu7vno"]
+
+[ext_resource type="PackedScene" uid="uid://d6nkpt8j0f7i" path="res://Scenes/BottomGround.tscn" id="1_fhdeh"]
+[ext_resource type="PackedScene" uid="uid://djp63mqstbkbg" path="res://Scenes/Wall.tscn" id="2_qhgsx"]
+[ext_resource type="PackedScene" uid="uid://do4hxvw30gek8" path="res://Scenes/Block.tscn" id="3_4kdsg"]
+[ext_resource type="PackedScene" uid="uid://bxa2w27yd5whp" path="res://Scenes/Brick.tscn" id="4_odqpv"]
+[ext_resource type="PackedScene" uid="uid://vforgpixrypf" path="res://Scenes/Enemy.tscn" id="5_qkkhx"]
+[ext_resource type="PackedScene" uid="uid://bawgfr0r3dbo5" path="res://Scenes/Ground.tscn" id="6_n7o1q"]
+[ext_resource type="PackedScene" uid="uid://c2dl41nadgue7" path="res://Scenes/GroundWithWall.tscn" id="7_daeul"]
+[ext_resource type="PackedScene" uid="uid://c62vvcxec7g8c" path="res://Scenes/BigCoin.tscn" id="8_3kjtb"]
+[ext_resource type="PackedScene" uid="uid://dkipgekiqi8xc" path="res://Scenes/Coin.tscn" id="9_7cmvi"]
+[ext_resource type="PackedScene" uid="uid://b8mea30ba1byy" path="res://Scenes/OffLimits.tscn" id="10_1epd6"]
+[ext_resource type="PackedScene" uid="uid://c3qo6c430n5uf" path="res://Scenes/Goal.tscn" id="11_6lbty"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iguhg"]
+font_size = 20
+font_color = Color(1, 0.65098, 0, 1)
+
+[node name="Level1" type="Node2D"]
+position = Vector2(871, 799)
+
+[node name="BottomGround" parent="." instance=ExtResource("1_fhdeh")]
+
+[node name="BottomGround2" parent="." instance=ExtResource("1_fhdeh")]
+position = Vector2(3258, 0)
+
+[node name="BottomGround3" parent="." instance=ExtResource("1_fhdeh")]
+position = Vector2(6488, 0)
+
+[node name="BottomGround4" parent="." instance=ExtResource("1_fhdeh")]
+position = Vector2(11139, -677)
+
+[node name="BottomGround5" parent="." instance=ExtResource("1_fhdeh")]
+position = Vector2(12251, 178)
+
+[node name="Wall" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(-1097, -567)
+
+[node name="Wall2" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(-1097, -1117)
+
+[node name="Wall3" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(5041, -565)
+
+[node name="Wall4" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(6334, -680)
+
+[node name="Wall5" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(8949, -679)
+
+[node name="Wall6" parent="." instance=ExtResource("2_qhgsx")]
+show_behind_parent = true
+position = Vector2(10513, -955)
+
+[node name="Wall7" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(12944, -679)
+
+[node name="Wall11" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(13268, -1796)
+
+[node name="Wall13" parent="." instance=ExtResource("2_qhgsx")]
+position = Vector2(13269, -2314)
+
+[node name="Wall9" parent="." instance=ExtResource("2_qhgsx")]
+show_behind_parent = true
+position = Vector2(13625, -1123)
+
+[node name="Wall12" parent="." instance=ExtResource("2_qhgsx")]
+show_behind_parent = true
+position = Vector2(13625, -902)
+
+[node name="Wall10" parent="." instance=ExtResource("2_qhgsx")]
+show_behind_parent = true
+position = Vector2(14216, 56)
+
+[node name="Wall14" parent="." instance=ExtResource("2_qhgsx")]
+show_behind_parent = true
+position = Vector2(14216, 530)
+
+[node name="Wall8" parent="." instance=ExtResource("2_qhgsx")]
+show_behind_parent = true
+position = Vector2(10064, 243)
+
+[node name="?-Block" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(277, -481)
+
+[node name="?-Block2" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(536, -481)
+
+[node name="?-Block3" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(3318, -1273)
+
+[node name="?-Block4" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(9070, -1207)
+
+[node name="?-Block9" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(9521, -1604)
+
+[node name="?-Block8" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(9013, -2077)
+
+[node name="?-Block5" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(11299, -261)
+
+[node name="?-Block6" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(13267, -300)
+
+[node name="?-Block7" parent="." instance=ExtResource("3_4kdsg")]
+position = Vector2(14278, -441)
+
+[node name="Brick" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(341, -481)
+
+[node name="Brick2" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(214, -481)
+
+[node name="Brick3" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(3207, -1270)
+
+[node name="Brick4" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(8950, -1207)
+
+[node name="Brick17" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(10430, -1887)
+
+[node name="Brick18" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(8702, -1948)
+
+[node name="Brick19" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(8598, -2126)
+
+[node name="Brick20" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(8726, -2292)
+
+[node name="Brick21" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(8958, -2383)
+
+[node name="Brick5" parent="." instance=ExtResource("4_odqpv")]
+position = Vector2(9834, -1155)
+
+[node name="Brick6" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(11068, -383)
+
+[node name="Brick7" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(11538, -107)
+
+[node name="Brick8" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(11655, -94)
+
+[node name="Brick9" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(11717, -387)
+
+[node name="Brick10" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(12130, -133)
+
+[node name="Brick11" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(12783, -118)
+
+[node name="Brick12" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(13127, -372)
+
+[node name="Brick13" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(15128, -515)
+
+[node name="Brick14" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(14551, -778)
+
+[node name="Brick15" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(14391, -844)
+
+[node name="Brick16" parent="." instance=ExtResource("4_odqpv")]
+show_behind_parent = true
+position = Vector2(14593, -934)
+
+[node name="Enemy" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(1089, -345)
+
+[node name="Enemy2" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(2830, -490)
+
+[node name="Enemy3" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(3849, -1058)
+
+[node name="Enemy4" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(7345, -984)
+
+[node name="Enemy5" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(7977, -352)
+
+[node name="Enemy7" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(9228, -276)
+
+[node name="Enemy6" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(6181, -345)
+
+[node name="Enemy8" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(11107, -1550)
+
+[node name="Enemy12" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(9180, -1959)
+
+[node name="Enemy9" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(12442, -198)
+
+[node name="Enemy10" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(9360, 82)
+
+[node name="Enemy11" parent="." instance=ExtResource("5_qkkhx")]
+position = Vector2(9052, 84)
+
+[node name="Ground" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(1681, -326)
+
+[node name="Ground2" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(2714, -326)
+
+[node name="Ground3" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(6335, -1004)
+
+[node name="Ground4" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(7941, -1004)
+
+[node name="Ground10" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(10077, -1677)
+
+[node name="Ground11" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(9555, -2445)
+
+[node name="Ground6" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(7941, -926)
+
+[node name="Ground5" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(8815, -1004)
+
+[node name="Ground7" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(10524, -1280)
+
+[node name="Ground8" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(11797, -1004)
+
+[node name="Ground9" parent="." instance=ExtResource("6_n7o1q")]
+position = Vector2(14735, -1389)
+
+[node name="GroundWithWall" parent="." instance=ExtResource("7_daeul")]
+position = Vector2(1679, -393)
+
+[node name="GroundWithWall2" parent="." instance=ExtResource("7_daeul")]
+position = Vector2(2711, -393)
+
+[node name="GroundWithWall7" parent="." instance=ExtResource("7_daeul")]
+position = Vector2(2803, -1385)
+
+[node name="GroundWithWall6" parent="." instance=ExtResource("7_daeul")]
+position = Vector2(3278, -1091)
+
+[node name="GroundWithWall4" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(4694, -650)
+
+[node name="GroundWithWall5" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(4019, -950)
+
+[node name="GroundWithWall3" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(4462, -452)
+
+[node name="GroundWithWall8" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(7184, -850)
+
+[node name="GroundWithWall9" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(8455, -278)
+
+[node name="GroundWithWall10" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(9134, -156)
+
+[node name="GroundWithWall13" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(9163, 188)
+
+[node name="GroundWithWall11" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(9544, -991)
+
+[node name="GroundWithWall18" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(9434, -1395)
+
+[node name="GroundWithWall19" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(9100, -1852)
+
+[node name="GroundWithWall12" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(11014, -1435)
+
+[node name="GroundWithWall14" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(14862, -354)
+
+[node name="GroundWithWall15" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(14697, -637)
+
+[node name="GroundWithWall16" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(14991, -1043)
+
+[node name="GroundWithWall17" parent="." instance=ExtResource("7_daeul")]
+show_behind_parent = true
+position = Vector2(15282, -1213)
+
+[node name="BigCoin" parent="." instance=ExtResource("8_3kjtb")]
+position = Vector2(2613, -1623)
+
+[node name="BigCoin2" parent="." instance=ExtResource("8_3kjtb")]
+position = Vector2(8768, -13)
+
+[node name="BigCoin3" parent="." instance=ExtResource("8_3kjtb")]
+position = Vector2(7732, -641)
+
+[node name="Coin" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(1519, -563)
+
+[node name="Coin2" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(1679, -563)
+
+[node name="Coin3" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(1828, -563)
+
+[node name="Coin4" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(4875, -950)
+
+[node name="Coin7" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(5007, -950)
+
+[node name="Coin8" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(5130, -950)
+
+[node name="Coin9" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(5904, -344)
+
+[node name="Coin10" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(6099, -342)
+
+[node name="Coin11" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(6299, -342)
+
+[node name="Coin12" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(6489, -342)
+
+[node name="Coin16" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(8482, -355)
+
+[node name="Coin13" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(6074, -1124)
+
+[node name="Coin14" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(6238, -1124)
+
+[node name="Coin15" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(6386, -1124)
+
+[node name="Coin17" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(10005, -1302)
+
+[node name="Coin18" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9434, -1531)
+
+[node name="Coin19" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9272, -1531)
+
+[node name="Coin20" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9604, -1531)
+
+[node name="Coin21" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9932, -1803)
+
+[node name="Coin24" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9259, -2555)
+
+[node name="Coin30" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9883, -2557)
+
+[node name="Coin31" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9573, -2633)
+
+[node name="Coin32" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9361, -2633)
+
+[node name="Coin34" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9466, -2677)
+
+[node name="Coin35" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9680, -2677)
+
+[node name="Coin33" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9788, -2633)
+
+[node name="Coin25" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9361, -2524)
+
+[node name="Coin26" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9468, -2555)
+
+[node name="Coin27" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9576, -2524)
+
+[node name="Coin28" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9680, -2555)
+
+[node name="Coin29" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(9788, -2522)
+
+[node name="Coin22" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(10111, -1803)
+
+[node name="Coin23" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(10285, -1803)
+
+[node name="Coin5" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(4428, -757)
+
+[node name="Coin6" parent="." instance=ExtResource("9_7cmvi")]
+position = Vector2(4274, -554)
+
+[node name="OffLimits" parent="." instance=ExtResource("10_1epd6")]
+position = Vector2(2083, 1288)
+
+[node name="Goal" parent="." instance=ExtResource("11_6lbty")]
+show_behind_parent = true
+position = Vector2(12741, -1045)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -1046.0
+offset_top = -432.0
+offset_right = -830.0
+offset_bottom = -383.0
+text = "Hint: 20 coins 
+           =
+       +1HP"
+label_settings = SubResource("LabelSettings_iguhg")

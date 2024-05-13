@@ -1,0 +1,80 @@
+[gd_scene load_steps=10 format=3 uid="uid://vforgpixrypf"]
+
+[ext_resource type="Script" path="res://Enemy.cs" id="1_1f4j3"]
+[ext_resource type="Texture2D" uid="uid://chv85aae031u0" path="res://img/enemy.png" id="2_ymupr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dng6q"]
+size = Vector2(4.25, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_06k6u"]
+size = Vector2(6, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_20b7k"]
+size = Vector2(5.125, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plgm3"]
+size = Vector2(55, 14.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i22xh"]
+size = Vector2(87, 3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mgnr"]
+size = Vector2(55, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxmpt"]
+size = Vector2(61, 43)
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_1f4j3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ymupr")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+
+[node name="EnemyRightSide" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(50, 10)
+shape = SubResource("RectangleShape2D_dng6q")
+
+[node name="Area2DRight" type="Area2D" parent="Hurtbox/EnemyRightSide"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox/EnemyRightSide/Area2DRight"]
+position = Vector2(-6, 0)
+shape = SubResource("RectangleShape2D_06k6u")
+
+[node name="EnemyLeftSide" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(-50, 9)
+shape = SubResource("RectangleShape2D_dng6q")
+
+[node name="Area2DLeft" type="Area2D" parent="Hurtbox/EnemyLeftSide"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox/EnemyLeftSide/Area2DLeft"]
+position = Vector2(5.5625, -1)
+shape = SubResource("RectangleShape2D_20b7k")
+
+[node name="HitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(-0.5, -30.4375)
+shape = SubResource("RectangleShape2D_plgm3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0.5, -19.5)
+shape = SubResource("RectangleShape2D_i22xh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 24.5)
+shape = SubResource("RectangleShape2D_1mgnr")
+
+[node name="KillArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillArea"]
+position = Vector2(0.5, 18.5)
+shape = SubResource("RectangleShape2D_vxmpt")
+
+[connection signal="area_entered" from="Hurtbox" to="." method="OnHurtBoxAreaEntered"]
+[connection signal="area_shape_entered" from="Hurtbox" to="." method="OnAreaShapeEntered"]
+[connection signal="body_entered" from="Hurtbox" to="." method="OnBodyEntered"]
+[connection signal="area_entered" from="Hurtbox/EnemyRightSide/Area2DRight" to="." method="OnPlayerEnteredRightSide"]
+[connection signal="area_entered" from="Hurtbox/EnemyLeftSide/Area2DLeft" to="." method="OnPlayerEnteredLeftSide"]
+[connection signal="area_entered" from="HitBox" to="." method="OnHitBoxAreaEntered"]

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6322ogwhcvks"]
+
+[ext_resource type="Script" path="res://Player.cs" id="1_287m5"]
+[ext_resource type="Texture2D" uid="uid://thv87oj70wm5" path="res://img/player.png" id="1_rdk6m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h05j8"]
+radius = 38.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_287m5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, -8)
+scale = Vector2(0.186004, 0.176923)
+texture = ExtResource("1_rdk6m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_h05j8")
+
+[node name="PlayerArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerArea"]
+shape = SubResource("CircleShape2D_h05j8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="PlayerTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="area_entered" from="PlayerArea" to="." method="OnCoinEntered"]
+[connection signal="area_shape_entered" from="PlayerArea" to="." method="OnCollision"]
+[connection signal="timeout" from="PlayerTimer" to="." method="OnPlayerSpeed"]

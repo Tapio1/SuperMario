@@ -1,0 +1,89 @@
+[gd_scene load_steps=10 format=3 uid="uid://b2qtica5rtsms"]
+
+[ext_resource type="PackedScene" uid="uid://d6nkpt8j0f7i" path="res://Scenes/BottomGround.tscn" id="1_2ea0q"]
+[ext_resource type="PackedScene" uid="uid://djp63mqstbkbg" path="res://Scenes/Wall.tscn" id="2_6dn67"]
+[ext_resource type="PackedScene" uid="uid://c2dl41nadgue7" path="res://Scenes/GroundWithWall.tscn" id="3_p36t4"]
+[ext_resource type="PackedScene" uid="uid://bd5ev6o6dskah" path="res://PlaceHolder1.tscn" id="4_nsloi"]
+[ext_resource type="PackedScene" uid="uid://b8mea30ba1byy" path="res://Scenes/OffLimits.tscn" id="5_ktdq2"]
+[ext_resource type="PackedScene" uid="uid://bawgfr0r3dbo5" path="res://Scenes/Ground.tscn" id="6_so72v"]
+
+[sub_resource type="Theme" id="Theme_wdrwq"]
+default_font_size = 20
+
+[sub_resource type="Theme" id="Theme_ugeaq"]
+default_font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_6do52"]
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="BottomGround" parent="." instance=ExtResource("1_2ea0q")]
+
+[node name="Wall" parent="." instance=ExtResource("2_6dn67")]
+position = Vector2(-1097, -659)
+
+[node name="Wall2" parent="." instance=ExtResource("2_6dn67")]
+position = Vector2(1090, -549)
+
+[node name="Wall3" parent="." instance=ExtResource("2_6dn67")]
+position = Vector2(1090, -1115)
+
+[node name="Wall4" parent="." instance=ExtResource("2_6dn67")]
+position = Vector2(-1096, -1209)
+
+[node name="GroundWithWall" parent="." instance=ExtResource("3_p36t4")]
+position = Vector2(0, -402)
+
+[node name="GroundWithWall2" parent="." instance=ExtResource("3_p36t4")]
+show_behind_parent = true
+position = Vector2(-676, -581)
+
+[node name="GroundWithWall3" parent="." instance=ExtResource("3_p36t4")]
+show_behind_parent = true
+position = Vector2(668, -581)
+
+[node name="PlaceHolder1" parent="." instance=ExtResource("4_nsloi")]
+position = Vector2(449, -659)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+light_mask = 16
+visibility_layer = 16
+offset_left = -300.0
+offset_top = -428.0
+offset_right = 28.0
+offset_bottom = -375.0
+theme = SubResource("Theme_wdrwq")
+text = "Use: W, A, S, D to move around"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 58.0
+offset_top = -431.0
+offset_right = 355.0
+offset_bottom = -362.0
+theme = SubResource("Theme_ugeaq")
+text = "Hold down 'shift' to sprint
+    Press 'space' to jump"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = -1998.0
+offset_top = -348.0
+offset_right = -1701.0
+offset_bottom = -279.0
+theme = SubResource("Theme_ugeaq")
+text = "Ifall jag lägger till fler banor så kan man gå hit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = -141.0
+offset_top = -272.0
+offset_right = 166.0
+offset_bottom = -221.0
+text = "Press 'esc' to access main menu"
+label_settings = SubResource("LabelSettings_6do52")
+
+[node name="OffLimits" parent="." instance=ExtResource("5_ktdq2")]
+position = Vector2(-14, 818)
+
+[node name="Ground" parent="." instance=ExtResource("6_so72v")]
+position = Vector2(-958, -330)
